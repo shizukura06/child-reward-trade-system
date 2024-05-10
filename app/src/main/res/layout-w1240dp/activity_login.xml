@@ -61,10 +61,11 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,7 +81,7 @@
         tools:layout_editor_absoluteY="529dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/facebook_logo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
@@ -89,7 +90,7 @@
             tools:layout_editor_absoluteY="539dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/signin_with_facebook3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -116,14 +117,14 @@
         tools:layout_editor_absoluteY="641dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/google_logo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:src="@drawable/google__g__logo_svg" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/signin_with_google3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -162,7 +163,7 @@
         app:layout_constraintVertical_bias="0.059" />
 
     <View
-        android:id="@+id/divider2"
+        android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
