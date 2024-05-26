@@ -65,7 +65,7 @@
         android:clickable="true"
         android:gravity="center"
         android:text="No account yet? Create one"
-        android:textSize="18sp" />
+        android:textSize="17sp" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -82,66 +82,13 @@
         android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider" />
 
-    <LinearLayout
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button_facebook"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/border_shadow"
-        android:backgroundTint="#1E57FF"
-        android:clickable="true"
-        android:gravity="center|start"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/facebook_logo1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:src="@drawable/_023_facebook_icon" />
-
-        <TextView
-            android:id="@+id/signin_with_facebook1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingEnd="24sp"
-            android:text="Login with facebook"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFF"
-            android:textSize="17sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/border_shadow"
-        android:clickable="true"
-        android:gravity="center|start"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/google_logo1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:src="@drawable/google__g__logo_svg" />
-
-        <TextView
-            android:id="@+id/signin_with_google1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingEnd="24sp"
-            android:text="login with google"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#222222"
-            android:textSize="17sp" />
-    </LinearLayout>
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="17sp" />
 
 </LinearLayout>
